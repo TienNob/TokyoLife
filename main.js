@@ -4,9 +4,13 @@ const modalPlaceContent = document.querySelector('.modal-place_container')
 const modalRegions = document.querySelectorAll('.modal-place_regions-content')
 const modalRegionsIcon = document.querySelectorAll('.modal-place_regions-content>i')
 const modalRegionsLists = document.querySelectorAll('.modal-place_regions-list')
-const cart = document.querySelector('.header-bottom_cart')
-const cartBtn = document.querySelector('.header-bottom_cart-icon')
-const cartSelect = document.querySelector('.header-bottom_cart-select')
+const cart = document.querySelector('.header-bottom_cart.pc')
+const cart2 = document.querySelector('.header-bottom_cart.reponsive')
+const cartBtn = document.querySelector('.header-bottom_cart-icon1')
+const cartBtn2 = document.querySelector('.header-bottom_cart-icon2')
+const cartSelect = document.querySelector('.header-bottom_cart-select1')
+const cartSelect2 = document.querySelector('.header-bottom_cart-select2')
+
 const sliderImgs = document.querySelectorAll('.slider-img')
 const sliderNext = document.querySelector('.slider-next')
 const sliderPrev = document.querySelector('.slider-prev')
@@ -88,8 +92,12 @@ function clickCart() {
         cartSelect.classList.toggle('openFlex')
         cartBtn.classList.toggle('onClickCart')
     })
-
+    cart2.addEventListener('click', () => {
+        cartSelect2.classList.toggle('openFlex')
+        cartBtn2.classList.toggle('onClickCart')
+    })
 }
+
 
 
 // next + prev + autoNext slider..........................................
