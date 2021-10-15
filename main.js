@@ -227,7 +227,7 @@ function changeSlideProduct() {
             productProposeItem.style.transform = `translateX(${tranformX}%)`
         }
     }
-    setInterval(nextSlideProduct, 10000)
+    setInterval(nextSlideProduct, 20000)
 
     // nextProduct................................................................
     productNext.addEventListener('click', () => {

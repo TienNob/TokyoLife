@@ -108,8 +108,8 @@
    
    .modal-place_container {
        background: url(https://tokyolife.vn/static/version1628907068/frontend/Sm/topshop/vi_VN/images/store_bg.jpg);
-       width: 391px;
-       height: 80vh;
+       min-width: 320px;
+       min-height: 480px;
        background-size: contain;
        background-repeat: no-repeat;
        border-radius: 5px;
@@ -133,7 +133,7 @@
        width: 100%;
        padding: 10px 20px;
        background-color: var(--white-color);
-       font-size: 20px;
+       font-size: 16px;
        color: var(--primary-color);
        display: flex;
        justify-content: center;
@@ -358,7 +358,7 @@
    
    .bar-item_propose {
        position: absolute;
-       z-index: 1;
+       z-index: 3;
        top: 0;
        left: calc(100% + 32px);
        background-color: var(--white-color);
@@ -375,10 +375,11 @@
    }
    
    .bar-item_propose-item {
-       font-size: 12px;
+       font-size: 13px;
        color: var(--text-color);
        padding: 16px 0;
        line-height: 18px;
+       font-weight: 400;
    }
    
    .bar-item_propose-item:first-child {
@@ -515,7 +516,7 @@
    }
    
    .baner-product_img:last-child {
-       padding-top: 32px;
+       padding-top: 30px;
    }
    /* produce propose................................... */
    
@@ -533,6 +534,7 @@
        font-size: 20px;
        color: var(--text-notActive);
        padding-bottom: 18px;
+       transition: all 0.3s linear;
    }
    
    .product-propose_title-name.active {
@@ -606,12 +608,12 @@
    .product-propose_new-item_img {
        object-fit: contain;
        width: 100%;
-       transition: opacity ease 0.2s;
+       transition: opacity ease 0.5s;
        cursor: pointer;
    }
    
    .product-propose_new-item_img:hover {
-       opacity: 0.8;
+       opacity: 0.7;
    }
    
    .product-propose_new-item_logo {

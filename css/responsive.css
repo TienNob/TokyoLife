@@ -18,11 +18,18 @@
         margin-left: 8px;
         position: relative;
     }
+    .product-propose_btn {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
     .header-bottom_menu-icon {
         font-size: 18.5px;
+    }
+    .baner-product_img:last-child {
+        padding-top: 12px;
     }
 }
 
@@ -41,6 +48,7 @@
     .header-info_about-content {
         border: none;
         margin-top: 12px;
+        text-align: center;
     }
     .header-baner {
         display: none;
@@ -133,6 +141,15 @@
     }
     .content {
         margin: 0 12px;
+    }
+    .baner-product {
+        margin-top: 30px;
+    }
+    .baner-product_img:last-child {
+        padding-top: 6px;
+    }
+    .product-propose_title-name {
+        text-align: center;
     }
     .product-change-arrow {
         display: none;
