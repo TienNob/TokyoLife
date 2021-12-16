@@ -451,10 +451,24 @@ function menuResponsive() {
     stopPropagationModal()
 }
 
+function choiceLocation() {
+    const regionsItem = document.querySelectorAll('.modal-place_regions-item')
+    regionsItem.forEach((item) => {
+        item.addEventListener('click', () => {
+            const location = item.innerText
+            headerLocation.innerHTML = location
+            modalPlace.classList.remove('open')
+            headerLocation.style.overflow = 'hidden'
+            headerLocation.style.maxWidth = '160px'
+        })
+    })
+
+}
 
 // callFunction..............................................................
 showModalPlace()
 showlists()
+choiceLocation()
 hideModalPlace()
 stopPropagationModal()
 clickCart()
